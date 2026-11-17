@@ -1,0 +1,34 @@
+ERC report (2026-11-17T20:06:51, Encoding UTF8)
+Report includes: Errors, Warnings
+
+***** Sheet /
+[lib_symbol_mismatch]: Symbol "USB_C_Receptacle_USB2.0_16P" stimmt nicht mit Kopie in Bibliothek "Connector" überein
+    ; warning
+    @(100.33 mm, 85.09 mm): Symbol J9 [USB_C_Receptacle_USB2.0_16P]
+[lib_symbol_issues]: Symbol "ZXLD1366" nicht in Bibliothek "_PS_LIB" gefunden
+    ; warning
+    @(143.51 mm, 106.68 mm): Symbol U6 [ZXLD1366]
+
+***** Sheet /uC/
+
+***** Sheet /USB/
+
+***** Sheet /DMX/
+
+***** Sheet /led_driver/
+
+***** Sheet /led_driver1/
+
+***** Sheet /led_driver2/
+
+***** Sheet /led_driver3/
+
+***** Sheet /NON_BOM/
+
+ ** ERC messages: 2  Errors 0  Warnings 2
+
+ ** Ignored checks:
+    - Global label only appears once in the schematic
+    - Four connection points are joined together
+    - SPICE model issue
+    - Assigned footprint doesn't match footprint filters

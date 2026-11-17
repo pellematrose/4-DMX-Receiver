@@ -1,0 +1,1066 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "0a5f5776-dbef-42a9-9553-6997a21c7196")
+	(paper "A4")
+	(title_block
+		(title "4-Channel DMX Receiver")
+		(date "2026-11-15")
+		(rev "V1.1")
+		(company "hand crafted electronics")
+		(comment 1 "https://ohwr.org/cern_ohl_s_v2.txt ")
+		(comment 2 "/pellematrose/DMX-Receiver")
+		(comment 3 "CERN-OHL-S v2")
+		(comment 4 "© 2026 Per-Simon Saal")
+	)
+	(lib_symbols
+		(symbol "power:+24V"
+			(power global)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "+24V"
+				(at 0 3.556 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"+24V\""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "+24V_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "+24V_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+	)
+	(text "RP2040-Zero"
+		(exclude_from_sim no)
+		(at 102.362 29.21 0)
+		(effects
+			(font
+				(size 3 3)
+			)
+		)
+		(uuid "20f80b0c-77f3-4ae2-9da0-c67a1343dfa6")
+	)
+	(junction
+		(at 67.31 53.34)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "520a74cb-032c-4127-ae82-8408c46d3cb4")
+	)
+	(junction
+		(at 67.31 41.91)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5ac35bec-ed52-4dc3-8787-f7aa85d97160")
+	)
+	(junction
+		(at 67.31 33.02)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "63c78372-25b8-4e18-9adb-541a02ce735a")
+	)
+	(junction
+		(at 67.31 35.56)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ba25b16c-ce03-405c-945d-a92d8ae88220")
+	)
+	(junction
+		(at 67.31 64.77)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f182951c-9bd5-4b2a-83f9-c982e1b97aaa")
+	)
+	(wire
+		(pts
+			(xy 67.31 76.2) (xy 67.31 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0ba8d31b-992b-4afd-b957-637212e42f50")
+	)
+	(wire
+		(pts
+			(xy 62.23 64.77) (xy 67.31 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1cccdd1b-0b9e-47fc-9ce9-a98415d586c2")
+	)
+	(wire
+		(pts
+			(xy 67.31 35.56) (xy 67.31 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2669a0d0-d3d5-4b84-ad0c-9e52d36d0884")
+	)
+	(wire
+		(pts
+			(xy 67.31 64.77) (xy 67.31 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2feaf225-c965-4311-b00e-813e7f774377")
+	)
+	(wire
+		(pts
+			(xy 121.92 57.15) (xy 149.86 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "351780a5-cc2c-4f68-a524-f0c627cd2f76")
+	)
+	(wire
+		(pts
+			(xy 67.31 35.56) (xy 85.09 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "360a7f60-b107-4a98-b07d-be0249ffa08f")
+	)
+	(wire
+		(pts
+			(xy 121.92 54.61) (xy 149.86 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4feb3803-aacf-42f4-93c5-eda69739ebed")
+	)
+	(wire
+		(pts
+			(xy 62.23 55.88) (xy 85.09 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5c41f0cc-6cdd-458e-b91b-b4bdc91ddd85")
+	)
+	(wire
+		(pts
+			(xy 62.23 76.2) (xy 67.31 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5e497954-6c15-4e11-bf71-ef3ef2ba7cca")
+	)
+	(wire
+		(pts
+			(xy 62.23 78.74) (xy 85.09 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6f2c282c-a689-4711-ab73-bb1c64ae4845")
+	)
+	(wire
+		(pts
+			(xy 67.31 41.91) (xy 67.31 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7816a039-e63b-4a72-976e-0799e6fc5530")
+	)
+	(wire
+		(pts
+			(xy 62.23 41.91) (xy 67.31 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8231ab18-6cf9-4f63-9b0e-2d1b910da415")
+	)
+	(wire
+		(pts
+			(xy 67.31 29.21) (xy 67.31 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "892d5b96-caa7-4c60-b293-328e4b6631a4")
+	)
+	(wire
+		(pts
+			(xy 62.23 67.31) (xy 85.09 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8de20baf-b726-40bc-b126-c640b46fa75a")
+	)
+	(wire
+		(pts
+			(xy 67.31 53.34) (xy 67.31 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8f1a6c08-33a2-479b-84bd-eeb6dffd49ac")
+	)
+	(wire
+		(pts
+			(xy 62.23 44.45) (xy 85.09 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b8187b87-4e9b-4f66-8c23-31c90867822c")
+	)
+	(wire
+		(pts
+			(xy 62.23 53.34) (xy 67.31 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ddb36bfb-a0d3-41fa-a61e-be67d9d54fc8")
+	)
+	(wire
+		(pts
+			(xy 67.31 33.02) (xy 62.23 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "efb1616e-f38c-4e04-b643-5eeca9e9cc6f")
+	)
+	(wire
+		(pts
+			(xy 121.92 52.07) (xy 149.86 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fbb84f3d-61ed-4906-8f49-857b87a61b5b")
+	)
+	(symbol
+		(lib_id "power:+24V")
+		(at 67.31 29.21 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "4143d498-3b2f-4606-89ce-69074424ab90")
+		(property "Reference" "#PWR010"
+			(at 67.31 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "VUSB"
+			(at 65.278 25.654 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 67.31 29.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 67.31 29.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+24V\""
+			(at 67.31 29.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "2cc3697c-bbd2-4b68-96a5-50aa74239458")
+		)
+		(instances
+			(project "DMX_Receiver"
+				(path "/0a5f5776-dbef-42a9-9553-6997a21c7196"
+					(reference "#PWR010")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(sheet
+		(at 85.09 25.4)
+		(size 36.83 58.42)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 255 227 0 0.24)
+		)
+		(uuid "5a24420c-0437-4dcb-826a-f985bccb27cf")
+		(property "Sheetname" "uC"
+			(at 85.09 24.6884 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "uc.kicad_sch"
+			(at 85.09 84.4046 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "PWM_A" output
+			(at 85.09 44.45 180)
+			(uuid "4dbbd4a6-0942-4623-9bda-062d6ad0f90e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "PWM_B" output
+			(at 85.09 55.88 180)
+			(uuid "c6e4f433-8e30-4489-bf11-c06547ba5121")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "PWM_C" output
+			(at 85.09 67.31 180)
+			(uuid "0a3bb21a-89a2-4922-b3fb-4e61424021b1")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "PWM_D" output
+			(at 85.09 78.74 180)
+			(uuid "cfc3c855-487b-48f0-bcf3-6ee27ed38dd9")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "DMX_REDE" output
+			(at 121.92 52.07 0)
+			(uuid "329d9e79-25cc-473c-b3b3-3d033acfac44")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "DMX_RX" input
+			(at 121.92 54.61 0)
+			(uuid "2cfcae54-a77e-4f3d-910e-1135da06e743")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "DMX_TX" output
+			(at 121.92 57.15 0)
+			(uuid "e7dcea86-dd97-4e08-a13b-5990d146b94c")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "VIN" passive
+			(at 85.09 35.56 180)
+			(uuid "ecd2dc6c-5635-4473-8ad3-27b997281bb0")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "DMX_Receiver"
+				(path "/0a5f5776-dbef-42a9-9553-6997a21c7196"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 49.53 30.48)
+		(size 12.7 5.08)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 255 38 15 0.23)
+		)
+		(uuid "5c8b6fa7-f7b9-4ebd-9c46-3b15fcd2e34c")
+		(property "Sheetname" "USB"
+			(at 49.53 29.7684 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "usb.kicad_sch"
+			(at 49.53 36.1446 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "VUSB" passive
+			(at 62.23 33.02 0)
+			(uuid "8993b20c-3610-4563-affd-450762ed2c0a")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "DMX_Receiver"
+				(path "/0a5f5776-dbef-42a9-9553-6997a21c7196"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 49.53 63.5)
+		(size 12.7 6.35)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 174 13 255 0.25)
+		)
+		(uuid "9873b0f7-a5dd-47fe-9ace-ae814a3fa74c")
+		(property "Sheetname" "led_driver2"
+			(at 49.53 62.7884 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "led_driver.kicad_sch"
+			(at 49.53 70.4346 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "PWM" input
+			(at 62.23 67.31 0)
+			(uuid "e946d1e1-1169-4743-beda-0370cc02241f")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "VIN" passive
+			(at 62.23 64.77 0)
+			(uuid "a0afede2-da83-4241-881d-bbb4a5e440e2")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "DMX_Receiver"
+				(path "/0a5f5776-dbef-42a9-9553-6997a21c7196"
+					(page "7")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 49.53 52.07)
+		(size 12.7 6.35)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 174 13 255 0.25)
+		)
+		(uuid "bc7a27eb-e79f-4410-8fc7-05bdcc320449")
+		(property "Sheetname" "led_driver1"
+			(at 49.53 51.3584 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "led_driver.kicad_sch"
+			(at 49.53 59.0046 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "PWM" input
+			(at 62.23 55.88 0)
+			(uuid "2e36b574-074c-46d4-8a79-88b188b9ad4e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "VIN" passive
+			(at 62.23 53.34 0)
+			(uuid "e3a8e082-aad6-48cd-b49e-186814ec4bd5")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "DMX_Receiver"
+				(path "/0a5f5776-dbef-42a9-9553-6997a21c7196"
+					(page "6")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 49.53 74.93)
+		(size 12.7 6.35)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 174 13 255 0.25)
+		)
+		(uuid "df374fb1-21a8-4363-84b5-73b6639e6870")
+		(property "Sheetname" "led_driver3"
+			(at 49.53 74.2184 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "led_driver.kicad_sch"
+			(at 49.53 81.8646 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "PWM" input
+			(at 62.23 78.74 0)
+			(uuid "8f5ed5c3-533d-4de6-bc3e-c85b0105ef0a")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "VIN" passive
+			(at 62.23 76.2 0)
+			(uuid "3287ea6c-9a9d-4be1-bd40-afd8e5869cd3")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "DMX_Receiver"
+				(path "/0a5f5776-dbef-42a9-9553-6997a21c7196"
+					(page "8")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 49.53 40.64)
+		(size 12.7 6.35)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 174 13 255 0.25)
+		)
+		(uuid "e20e719d-8267-4c85-9f58-672f95d2f1d8")
+		(property "Sheetname" "led_driver"
+			(at 49.53 39.9284 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "led_driver.kicad_sch"
+			(at 49.53 47.5746 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "PWM" input
+			(at 62.23 44.45 0)
+			(uuid "7fe67f1b-7a24-4443-a9fa-6d2f5d7746c8")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "VIN" passive
+			(at 62.23 41.91 0)
+			(uuid "07f83253-18ad-495e-84cf-1420122a9836")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "DMX_Receiver"
+				(path "/0a5f5776-dbef-42a9-9553-6997a21c7196"
+					(page "5")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 149.86 46.99)
+		(size 15.24 16.51)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 255 0.26)
+		)
+		(uuid "e42ba811-7ebf-4bbf-93e9-40ee036b2ee8")
+		(property "Sheetname" "DMX"
+			(at 149.86 46.2784 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "dmx.kicad_sch"
+			(at 149.86 64.0846 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "DMX_REDE" input
+			(at 149.86 52.07 180)
+			(uuid "97428292-cb31-47d4-adec-32926ea75027")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "DMX_TX" input
+			(at 149.86 57.15 180)
+			(uuid "405890cf-9aeb-49a8-b09a-864b2802f8b8")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "DMX_RX" output
+			(at 149.86 54.61 180)
+			(uuid "aeb761c3-7d1d-4496-988b-c60932d764da")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "DMX_Receiver"
+				(path "/0a5f5776-dbef-42a9-9553-6997a21c7196"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 38.1 110.49)
+		(size 22.86 13.97)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 30 30 30 0.1)
+		)
+		(uuid "eabd4878-49f3-4894-bba2-c8375aba2a87")
+		(property "Sheetname" "NON_BOM"
+			(at 38.1 109.7784 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "non_bom.kicad_sch"
+			(at 38.1 125.0446 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "DMX_Receiver"
+				(path "/0a5f5776-dbef-42a9-9553-6997a21c7196"
+					(page "9")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+	(embedded_files
+		(file
+			(name "Worksheet.kicad_wks")
+			(type worksheet)
+			(data |KLUv/WCYG60fAFZlcR/w2jxACOI+F9hakCzKQeugdl0jRQiZbvtQDotDK74SbgBjAGQAmfN8iR7e
+				5853gvfgSsIFD5s623twNnH/XHbi3kUhLWuh3DFxHoRLBuqwn+g/mgpvWslAoT/c0rpf4S8AAIET
+				6nHX8Ao4gsy99sGc0knwMvedjDccKgACBszdZez4Nk7rMk4VAIGOpOJ8Oh6NVAgWW+TX0WbuClpr
+				R0rpnO1S0hgz/g17HgukfYcaSUDgNw4Eo3wdd/oVviRc4IL3K/zZ5443Z8zd1kmzaa201j3L2mO8
+				1mLW2kpznn1llkXa0CEWHW8aJOGmEO5sv45Ufjac8RYZfzbU++BOg7yI+ZS1mjgPzFCi10IIRKI7
+				/Yv63eu047zdFMMurLVtrfc5vVJiF1qP00YbX88q38UmxGSM3VBiPg+fXfZ9+DvP5Sx2O6X+WKvu
+				/fCaVeIoCd+4EKvEnWx7wy8jAUPdNqwTx4h+J5000gqpYJ6FTrsOEK+BxC6KBseBsVge00omD8sj
+				46h0fNWdyvti+3RALo9Lw5bxInFEJKTSZXxpJApKZMJwEa7Tx1hk8Xkxquu0B+Ia9jXFYApXKKRu
+				cem1C42PQiu9BoEMoPFkaWokSVEK7QZxFSHMWGfjBsVZj93m0Hbg1gXznnc/r6Urz8WZ7mLm6VYV
+				94IbSDgJencBdjqQASPybhCAAFZdRwNH3icAvefOvH2X6IwKPqrzzlcP6dutXPmzA2QHfbSI253b
+				GZzmMyVqQnyLz/zuQHdlbtj8mq9oQSSaRHcu1Z1IV1dEpJ8EJzSJHcQg29L5lhxy9zwt3TB3R03I
+				CjiXton2Fxs+sq0DfkQhltJ85JvsTmljMgssqEWJYZ5dpM297lkLpLNzY4zLNBtT1uwgnGB8XqUY
+				HI0mCQOivw07K2vJC4xM78LMl7+HvVAQWDXm4dwmaGvhMgFpKRxX/rJp8g4JKXrsVFyAjRDYVDiN
+				wDLvxnATxmSPsTYJnvxWwHTSxiycpbKXwdb4xMRPdzGD6bSd6wT0Q3WHEJoRtK2AznUxExkVkgkp
+				Tke2k5CiS1eQgohOQnFKV3RFQsrOdgqidNWaJrJt85jXDwgfaQX2fsNgzzbGerjc3owTRUHHCAI0
+				kqf4drlalz8rVU57RsLJEc0pz5+txtPmQAukzZzBMJa8kPfZPkeAIkEi0OrZiZaaCMb2+gza5uyf
+				XOK9Kzkxhsg5Swed38tSZnbPW152hie/oRaUsmZQpEsBEI8SRPgrl1SP7TwarqxVori7Ow5M15kn
+				LJs355zd0ZLwbrVayaCgeqD7+lAmYtbGrAv/kKW3w+4L010Xs6w/BWsE65Dvoa6ueoRhfNRV|
+			)
+			(checksum "6FC1C7E4D1D76EC6AAC44F1B5F2AE1D0")
+		)
+	)
+)
