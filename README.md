@@ -59,5 +59,8 @@ Board: *Raspberry Pi Pico*, sketch: `dmx_receiver.ino`.
 - When idle without DMX, the display does not refresh continuously — it redraws only on button presses and every 250 ms in the main menu.
 - DMX handling is non-blocking, so buttons and display stay responsive even when the signal drops out.
 - `buffer[0]` is the DMX start byte, which is why channel evaluation begins at `address + i` in the buffered universe.
+# Not included in the Repo
+- Some LEDs to light up
 ## License
-GPL-3.0-or-later, see `LICENSE`. Copyright (c) 2026 Per-Simon Saal.
+GPL-3.0-or-later, for Firmware, see `LICENSE`. Copyright (c) 2026 Per-Simon Saal.
+CERN-OHL-S-2.0, for Hardware and Enclosure, see `LICENSE`. Copyriht (c) 2026 Per-Siimon Saal. 
