@@ -12,7 +12,7 @@ Enclosure_buttoncap_V3.step
 
 Use your favorite filament. No support structure needed.
 
-![assembly-overview](https://github.com/pellematrose/4-DMX-Receiver/tree/main/Enclosure/assembly-overview.jpg "Overview") 
+![assembly-overview](https://github.com/pellematrose/4-DMX-Receiver/blob/main/Enclosure/assembly-overview.jpg "Overview") 
 ## LED housing
 I used 40mm Aluminium U-Profile and custom LED PCB. You can take whatever LED you like. Just make shure they can handle the current. 
 The lenses come from Aliexpress.
@@ -28,4 +28,4 @@ The LED face ist laser cut from PMMA. You can also 3D print it.
 6. Fasten your custom LED housing to the back enclosure part with the 18mm standoffs 
 7. Fasten your custom LED face part with M3x6mm screws.
 
-![assembled](https://github.com/pellematrose/4-DMX-Receiver/tree/main/Enclosure/assembled.jpg "Assembled") 
+![assembled](https://github.com/pellematrose/4-DMX-Receiver/blob/main/Enclosure/assembled.jpg "Assembled") 
