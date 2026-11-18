@@ -63,4 +63,4 @@ Board: *Raspberry Pi Pico*, sketch: `dmx_receiver.ino`.
 - Some LEDs to light up
 ## License
 GPL-3.0-or-later, for Firmware, see `LICENSE`. Copyright (c) 2026 Per-Simon Saal.
-CERN-OHL-S-2.0, for Hardware and Enclosure, see `LICENSE`. Copyriht (c) 2026 Per-Siimon Saal. 
+CERN-OHL-S-2.0, for Hardware and Enclosure, see `LICENSE`. Copyriht (c) 2026 Per-Simon Saal. 
