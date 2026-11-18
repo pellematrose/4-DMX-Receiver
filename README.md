@@ -49,7 +49,7 @@ The DMX input needs an RS-485 transceiver (e.g. MAX485) running at 3.3 V; twist 
 ## Build
 Platformio with the **Raspberry Pi Pico / RP2040** core (Earle Philhower).
 Required libraries:
-- `DmxInput` (DMX input via PIO)
+- `DmxInput` (DMX input via PIO, by ![jostlowe](https://github.com/jostlowe/Pico-DMX))
 - `Adafruit SSD1306`
 - `Adafruit GFX Library`
 - `Adafruit NeoPixel`
@@ -63,4 +63,5 @@ Board: *Raspberry Pi Pico*, sketch: `dmx_receiver.ino`.
 - Some LEDs to light up
 ## License
 GPL-3.0-or-later, for Firmware, see `LICENSE`. Copyright (c) 2026 Per-Simon Saal.
+
 CERN-OHL-S-2.0, for Hardware and Enclosure, see `LICENSE`. Copyriht (c) 2026 Per-Simon Saal. 
